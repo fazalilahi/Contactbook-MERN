@@ -5,6 +5,7 @@ const xss = require('xss-clean');
 const rateLimit = require('express-rate-limit');
 const hpp = require('hpp');
 const cors = require('cors');
+var path = require('path');
 
 const app = express();
 
@@ -31,7 +32,7 @@ app.use(hpp());
 //Enabling CORS
 app.use(cors());
 
-app.get('/', (req, res) => res.json({ msg: 'Contact Book Api' }));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/index.html')));
 
 // Defining routes
 app.use('/api/v1/users', require('./routes/users'));
