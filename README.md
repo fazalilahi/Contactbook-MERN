@@ -1,6 +1,6 @@
 # Contactbook api
 
-Basic CRUD api with nodejs.
+Basic CRUD api with nodejs.(connect mongodb in config> default.json)
 
 - Register, Login user
 - Add contact, Update, Get all contacts, Delete.
@@ -10,3 +10,4 @@ Basic CRUD api with nodejs.
 API documentation tip ; )
 
 > I used postman for testing. So, for my documentation used [docgen](https://github.com/thedevsaddam/docgen) to easily generate documentation.
+
